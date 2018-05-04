@@ -1,7 +1,9 @@
 {
-  "name": "testing-react",
+  "name": "testing-react-example",
   "version": "0.1.0",
-  "private": true,
+  "author": "Fernan de Dios",
+  "license": "MIT",
+  "repository": "git@github.com:fernandedios/fdd-chat-app.git",
   "dependencies": {
     "axios": "^0.18.0",
     "enzyme": "^3.3.0",
