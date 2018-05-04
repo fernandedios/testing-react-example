@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "author": "Fernan de Dios",
   "license": "MIT",
-  "repository": "git@github.com:fernandedios/fdd-chat-app.git",
+  "repository": "git@github.com:fernandedios/testing-react-example.git",
   "dependencies": {
     "axios": "^0.18.0",
     "enzyme": "^3.3.0",
