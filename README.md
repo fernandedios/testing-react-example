@@ -1,7 +1,7 @@
 [WIP] testing-react-example
 =========
 
-> Jest, Enzyme
+> Jest, Enzyme, Create React App
 
 [WIP] Jest, Enzyme compilation of common test cases
 
@@ -12,7 +12,7 @@ Checkout this repo, install dependencies, configure, then start the app.
 
 ```html
 $ git clone git@github.com:fernandedios/testing-react-example.git
-$ cd fdd-chat-app
+$ cd testing-react-example
 $ npm install
 $ npm start
 ```
