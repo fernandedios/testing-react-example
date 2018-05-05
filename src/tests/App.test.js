@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import App from '../App';
 
 describe('<App />', () => {
@@ -15,5 +15,10 @@ describe('<App />', () => {
   it('renders h1 welcome message', () => {
     const app = shallow(<App />);
     expect(app.find('h1.App-title').text()).toEqual('Welcome to React');
+  });
+
+  it('renders button component', () => {
+    const app = mount(<App />);
+    expect(app.find('button.btn').length).toEqual(1);
   });
 });

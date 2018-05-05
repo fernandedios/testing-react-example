@@ -15,4 +15,10 @@ describe('<Button />', () => {
     expect(typeof(output.prop('name'))).toBe('string');
     expect(output.prop('name')).toEqual('test');
   });
+
+  it('should call mockFunction when clicked', () => {
+    const output = shallow(<Button name="test" handleClick={mockFunction} />);
+    output.simulate('click');
+    expect(mockFunction).toHaveBeenCalled();
+  });
 });
