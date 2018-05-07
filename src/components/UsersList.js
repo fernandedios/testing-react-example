@@ -13,7 +13,7 @@ class UsersList extends Component {
       this.setState({ users });
     }
     catch(err) {
-      console.log(err);
+      // console.log(err);
     }
   }
 

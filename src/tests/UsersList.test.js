@@ -7,11 +7,7 @@ import MockAdapter from 'axios-mock-adapter';
 import { UsersList } from '../components';
 import { API_URL } from '../constants';
 
-const fakeUsers = [
-  { id: 1, name: 'Leanne Graham' },
-  { id: 2, name: 'Ervin Howell' },
-  { id: 3, name: 'Ryan Bauch' }
-];
+jest.mock('../services/getUsers'); // jest will look at __mocks__ folder
 
 describe('<UsersList />', () => {
   it('should be defined', () => {
@@ -22,4 +18,18 @@ describe('<UsersList />', () => {
     const output = ReactTestRenderer.create(<UsersList />).toJSON();
     expect(output).toMatchSnapshot();
   });
+
+  it('fetchers an array of users and renders them on a list', (done) => {
+    const output = shallow(<UsersList />);
+
+    setTimeout(() => {
+      output.update(); //rerender component
+
+      const state = output.instance().state;
+      expect(state.users.length).toEqual(3); // we only have 3 on the mock test
+      expect(output.find('li').length).toEqual(3);
+
+      done();
+    });
+  })
 });
