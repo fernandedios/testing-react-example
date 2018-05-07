@@ -7,6 +7,12 @@ import MockAdapter from 'axios-mock-adapter';
 import { UsersList } from '../components';
 import { API_URL } from '../constants';
 
+const fakeUsers = [
+  { id: 1, name: 'Leanne Graham' },
+  { id: 2, name: 'Ervin Howell' },
+  { id: 3, name: 'Ryan Bauch' }
+];
+
 describe('<UsersList />', () => {
   it('should be defined', () => {
     expect(UsersList).toBeDefined();

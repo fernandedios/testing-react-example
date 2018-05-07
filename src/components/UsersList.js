@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-
-import { API_URL } from '../constants';
+import getUsers from '../services/getUsers';
 
 class UsersList extends Component {
   constructor(props) {
@@ -9,13 +7,14 @@ class UsersList extends Component {
      this.state = { users: [] };
   }
 
-  componentWillMount() {
-    axios.get(`${API_URL}/users`)
-      .then((response) => {
-        const users = response.data;
-        this.setState({ users });
-      })
-      .catch(err => console.log(err));
+  async componentWillMount() {
+    try {
+      const users = await getUsers();
+      this.setState({ users });
+    }
+    catch(err) {
+      console.log(err);
+    }
   }
 
   renderList() {
