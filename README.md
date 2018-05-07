@@ -10,13 +10,18 @@ Getting Started
 
 Checkout this repo, install dependencies, configure, then start the app.
 
-```html
+```bash
 $ git clone git@github.com:fernandedios/testing-react-example.git
 $ cd testing-react-example
 $ npm install
-$ npm start
+$ npm test
 ```
 
+To run all tests without any prompts
+
+```bash
+$ npm run test-all
+```
 
 Thanks
 ------
