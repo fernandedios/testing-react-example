@@ -19,5 +19,8 @@
     "test": "react-scripts test --env=jsdom",
     "test-all": "CI=true npm test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "axios-mock-adapter": "^1.15.0"
   }
 }
