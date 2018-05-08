@@ -15,7 +15,7 @@ class Checkbox extends Component {
   render() {
     return (
       <label>
-        <input type="checkbox" checked={this.state.isChecked} onChange={this.onChange} />
+        <input type="checkbox" className="form-control" checked={this.state.isChecked} onChange={this.onChange} />
         {this.state.isChecked ? this.props.labelOn : this.props.labelOff}
       </label>
     );
