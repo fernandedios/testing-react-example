@@ -1,8 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import ReactTestRenderer from 'react-test-renderer';
-import axios from 'axios';
-import MockAdapter from 'axios-mock-adapter';
 
 import { UsersList } from '../components';
 import { API_URL } from '../constants';
