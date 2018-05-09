@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { TextInput } from './TextInput';
+import { Button } from './Button';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -18,10 +20,10 @@ class LoginForm extends Component {
     return (
       <form className="login-form">
         <label>Username: </label>
-        <input type="text" name="email" id="email" onChange={this.onChange} />
+        <TextInput name="email" onChange={this.onChange} />
         <label>Password: </label>
-        <input type="password" name="password" id="password" onChange={this.onChange} />
-        <button>Submit</button>
+        <TextInput type="password" name="password" onChange={this.onChange} />
+        <Button name="Submit" />
       </form>
     )
   }
