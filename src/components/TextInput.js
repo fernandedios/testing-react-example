@@ -1,8 +1,9 @@
 import React from 'react';
 
-const TextInput = (props) => {
-  const { type, name, ...others } = props;
-  return <input {...others} id={name} type={type || 'text'} className="form-control" />;
+const TextInput = ({ type, name, ...others }) => {
+  return <input {...others} name={name} id={name} type={type} className="form-control" />;
 };
+
+TextInput.defaultProps = { type: 'text' };
 
 export { TextInput };
