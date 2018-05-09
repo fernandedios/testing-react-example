@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-import { Button, Checkbox, UsersList } from './components';
+import { Button, Checkbox, UsersList, LoginForm } from './components';
 
 class App extends Component {
   render() {
@@ -13,8 +13,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p><Button name="Example Button" /> <Checkbox labelOn="On" labelOff="Off" /></p>
+        <UsersList />
         <div>
-          <UsersList />
+          <LoginForm />
         </div>
       </div>
     );
