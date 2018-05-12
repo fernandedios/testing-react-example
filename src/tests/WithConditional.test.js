@@ -24,9 +24,10 @@ describe('<WithConditional />', () => {
 
   it('should pass through additional props', () => {
     const name = 'Fernan';
+    const greeting = 'Hiya';
     const ConditionalComponent = WithConditional(Greeter);
-    const output = shallow(<ConditionalComponent name={name} condition={true} />);
-    expect(output.html()).toEqual(`<div>Hello ${name}!</div>`);
+    const output = shallow(<ConditionalComponent greetings={greeting} name={name} condition={true} />);
+    expect(output.html()).toEqual(`<div>${greeting} ${name}!</div>`);
   });
 
   it('should render correctly', () => {
