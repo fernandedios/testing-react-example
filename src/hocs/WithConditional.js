@@ -1,7 +1,7 @@
 import React from 'react';
 
 const WithConditional = (Component) => {
-  function withConditionalComponent({ condition, ...others }) {
+  return ({ condition, ...others }) => {
     if (condition) {
       return <Component {...others} />;
     }
