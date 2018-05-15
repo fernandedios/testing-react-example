@@ -18,9 +18,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "test-all": "CI=true npm test",
+    "test:cypress": "start-server-and-test start http://localhost:3000 cypress",
+    "cypress": "cypress run",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "axios-mock-adapter": "^1.15.0"
+    "axios-mock-adapter": "^1.15.0",
+    "cypress": "^2.1.0",
+    "start-server-and-test": "^1.4.1"
   }
 }
