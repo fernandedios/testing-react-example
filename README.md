@@ -1,9 +1,9 @@
-[WIP] testing-react-example
+testing-react-example
 =========
 
 > Jest, Enzyme, Create React App
 
-[WIP] Jest, Enzyme compilation of common test cases
+Jest, Enzyme compilation of common test cases
 
 Getting Started
 ------------
