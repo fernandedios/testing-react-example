@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import logo from './logo.svg';
 import './App.css';
-import { Button, Checkbox, Greeter, UsersList, LoginForm } from './components';
+import { Button, Checkbox, Greeter, UsersList, LoginForm, Counter } from './components';
 import WithConditional from './hocs/WithConditional';
 
 class App extends Component {
@@ -20,6 +20,7 @@ class App extends Component {
         <UsersList />
         <div>
           <LoginForm />
+          <Counter />
         </div>
       </div>
     );
