@@ -9,15 +9,11 @@ exports[`<Counter /> should render correctly 1`] = `
     0
   </p>
   <button
-    className="btn btn-primary"
-    name="Increment"
     onClick={[Function]}
   >
     Increment
   </button>
   <button
-    className="btn btn-primary"
-    name="Decrement"
     onClick={[Function]}
   >
     Decrement

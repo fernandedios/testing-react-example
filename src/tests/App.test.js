@@ -19,6 +19,6 @@ describe('<App />', () => {
 
   it('renders button component', () => {
     const app = mount(<App />);
-    expect(app.find('button.btn').length).toEqual(4);
+    expect(app.find('button.btn').length).toEqual(2);
   });
 });

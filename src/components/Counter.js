@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from './Button';
 
 const doIncrement = (prevState) => ({
   counter: prevState.counter + 1
@@ -31,8 +30,8 @@ class Counter extends Component {
       <div>
         <h3>Counter Component</h3>
         <p>{this.state.counter}</p>
-        <Button handleClick={this.onIncrement} name="Increment" />
-        <Button handleClick={this.onDecrement} name="Decrement" />
+        <button onClick={this.onIncrement}>Increment</button>
+        <button onClick={this.onDecrement}>Decrement</button>
       </div>
     );
   }
