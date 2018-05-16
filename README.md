@@ -1,3 +1,5 @@
+[![Status](https://travis-ci.org/fernandedios/testing-react-example.svg?branch=master)](https://travis-ci.org/fernandedios/testing-react-example)
+
 testing-react-example
 =========
 
