@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Greeter = ({ name, greetings }) => {
-  return <div>{`${greetings} ${name}!`}</div>;
+  return <div id="greetings">{`${greetings} ${name}!`}</div>;
 };
 
 Greeter.defaultProps = {

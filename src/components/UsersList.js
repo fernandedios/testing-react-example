@@ -27,7 +27,7 @@ class UsersList extends Component {
     });
 
     return (
-      <ul>
+      <ul className="users-list">
         {lis}
       </ul>
     );

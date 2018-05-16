@@ -16,7 +16,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
           <ConditionalComponent condition={true} />
         </header>
-        <p><Button name="Example Button" /> <Checkbox labelOn="On" labelOff="Off" /></p>
+        <p><Button id="example-button" name="Example Button" /> <Checkbox labelOn="On" labelOff="Off" /></p>
         <UsersList />
         <div>
           <LoginForm />
