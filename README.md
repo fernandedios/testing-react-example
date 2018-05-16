@@ -1,9 +1,9 @@
 testing-react-example
 =========
 
-> Jest, Enzyme, Create React App
+> Jest, Enzyme, Cypress, Create React App
 
-Jest, Enzyme compilation of common test cases
+Jest, Enzyme, Cypress e2e compilation of common test cases
 
 Getting Started
 ------------
@@ -17,10 +17,16 @@ $ npm install
 $ npm test
 ```
 
-To run all tests without any prompts
+To run all unit tests without any prompts
 
 ```bash
 $ npm run test-all
+```
+
+To run all e2e tests
+
+```bash
+$ npm run test:cypress
 ```
 
 Thanks
