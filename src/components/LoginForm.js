@@ -23,7 +23,7 @@ class LoginForm extends Component {
         <TextInput name="email" onChange={this.onChange} />
         <label>Password: </label>
         <TextInput type="password" name="password" onChange={this.onChange} />
-        <Button name="Submit" />
+        <Button id="login-button" name="Submit" />
       </form>
     )
   }

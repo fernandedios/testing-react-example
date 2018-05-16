@@ -26,6 +26,7 @@ exports[`<LoginForm /> should render correctly 1`] = `
   />
   <button
     className="btn btn-primary"
+    id="login-button"
     name="Submit"
     onClick={undefined}
   >

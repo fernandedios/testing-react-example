@@ -27,7 +27,7 @@ describe('<WithConditional />', () => {
     const greeting = 'Hiya';
     const ConditionalComponent = WithConditional(Greeter);
     const output = shallow(<ConditionalComponent greetings={greeting} name={name} condition={true} />);
-    expect(output.html()).toEqual(`<div>${greeting} ${name}!</div>`);
+    expect(output.html()).toEqual(`<div id="greetings">${greeting} ${name}!</div>`);
   });
 
   it('should render correctly', () => {
