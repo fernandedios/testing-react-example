@@ -6,7 +6,7 @@ class LoginForm extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { username: '', password: '' };
+    this.state = { email: '', password: '' };
     this.onChange = this.onChange.bind(this);
   }
 
